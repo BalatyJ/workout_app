@@ -1,0 +1,467 @@
+/*  ===== MOBILE styles (inherited by all devices) ===== 
+/*  ===== See tablet, desktop, and print @media queries at the bottom.
+
+
+/*   ----- Imports  -----  */
+@font-face {
+  /* Add fonts from the server ... */
+
+}
+
+/* ...or hosted services like Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+@import '../node_modules/modern-normalize/modern-normalize.css';
+/* npm install modern-normalize 
+                              Resets elements for browser consistancy.  
+                              http://nicolasgallagher.com/about-normalize-css/ 
+                            */
+
+
+/*   ----- Variables  -----  */
+:root {
+  --custom-color: rgb(6, 85, 0);
+  --custom-size: 1em;
+  --custom-background-color: #504644;
+  --custom-body-color: rgba(202, 255, 253, 0.9);
+  --custom-border-color: rgba(0, 132, 168, 0.3);
+  --default-color: hsla(177, 100%, 42%, 1);
+  --default-darkest: hsla(177, 100%, 18%, 1);
+  --default-brightest: hsla(177, 100%, 78%, 1);
+  --default-transparent: hsla(177, 100%, 58%, 0.1);
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Can alternatively define in html {} or :root {} */
+  color: var(--default-color);
+  background-color: var(--default-darkest);
+  font-family: 'Baloo 2', cursive;
+  font-size: var(--custom-size);
+  margin: 4%;
+  padding: 2%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#innerAppContainer {}
+
+/* ----- Anchors ----- Text links */
+a {}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+
+  border-left: 10px solid var(--custom-border-color);
+  border-right: 10px solid var(--custom-border-color);
+  padding: 25px 0px;
+  font-size: 1.5em;
+  line-height: 150%;
+  background-color: var(--custom-body-color);
+  text-align: center;
+  font-weight: 1000;
+  margin: 0;
+  vertical-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: rgb(0, 117, 146);
+  color: rgba(172, 241, 255, 0.909);
+  font-size: 1.1em;
+  font-weight: 1000;
+  margin: 0 5%;
+  padding: 0 2%;
+  vertical-align: baseline;
+  border: double;
+  font-style: italic;
+  transition: background-color 1s, color 1s, border 1s, font-size 1s, padding 1s;
+}
+
+nav a:hover {
+  border: solid;
+  font-size: 1.2em;
+  font-weight: 1500;
+  background-color: rgba(0, 213, 255, 0.472);
+  color: rgb(0, 117, 146);
+  text-decoration: solid;
+  vertical-align: center;
+  margin: 0 5%;
+  padding: 0 2.5%;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  background-color: var(--custom-body-color);
+  color: var(--default-darkest);
+  border: 10px solid var(--custom-border-color);
+  font-size: 1.2em;
+  font-weight: 1200;
+  margin: 1% 0 0 0;
+  padding: 1% 0 0 0;
+  text-align: center;
+}
+
+main {
+  background-color: var(--custom-body-color);
+  color: var(--custom-color);
+  border: 10px solid var(--custom-border-color);
+  padding: 2%;
+}
+
+
+section {}
+
+article {}
+
+#topic1 {}
+
+#topic2 {}
+
+#gallery1 {}
+
+#gallery2 {}
+
+div {}
+
+aside {}
+
+footer {
+  background-color: var(--custom-body-color);
+  color: var(--default-darkest);
+  border: 5px solid var(--custom-border-color);
+  font-size: 1em;
+  font-weight: 800;
+  margin: 0 0 0 0;
+  padding: 1%;
+  text-align: center;
+}
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+/* Define consistant font family.*/
+
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(custom-color);
+  text-shadow: ;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(custom-color);
+}
+
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/*  ----- Table ----- */
+table {
+  border-collapse: collapse;
+  margin: 50px auto;
+  padding: auto;
+}
+
+caption {}
+
+thead {
+  background-color: rgba(240, 255, 35, 0.6);
+}
+
+tbody {}
+
+tfoot {}
+
+tr:nth-child(odd) {
+  background-color: rgba(0, 115, 255, 0.3);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 162, 255, 0.2);
+}
+
+td,
+tr,
+th {
+  border: 3px solid rgb(161, 83, 0);
+  text-align: center;
+  vertical-align: auto;
+}
+
+
+/* #unitHeader {
+  column-width: 50px;  
+}
+
+#editHeader {
+  column-width: 50px;
+} */
+
+#unit option {
+  text-align: center;
+  padding: 0 10px;
+}
+
+#exercises caption {
+  color: rgba(0, 72, 10, 0.741);
+  font-weight: 800;
+  font-size: 25px;
+  background-color: rgb(255, 212, 160);
+  border: 3px solid rgb(139, 72, 0);
+  border-bottom: 0px;
+  padding: 2px 0;
+}
+
+td:nth-child(1) {}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+
+/*  ----- Form ----- */
+form {
+  margin: 0 50px;
+}
+
+fieldset {
+  background-color: rgb(254, 220, 178);
+  color: rgb(37, 52, 0);
+  border-radius: 5px;
+  margin: auto;
+  width: 100px;
+  text-align: center;
+}
+
+legend {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(255, 229, 169);
+  padding: 0 20px;
+}
+
+label {
+  color: rgb(0, 91, 194);
+  font-weight: 700;
+}
+
+button {
+  border-radius: 50px;
+  background-color: rgb(0, 117, 146);
+  color: rgba(172, 241, 255, 0.909);
+  margin: 5px 0;
+  padding: 10px;
+  border: solid;
+  text-align: center;
+}
+
+button:hover {
+  transition-property: all;
+  background-color: rgba(172, 241, 255, 0.909);
+  color: rgb(0, 117, 146);
+  border: double;
+  border-color: rgb(0, 117, 146);
+  transition-duration: 1s;
+}
+
+form input {
+  margin: 0px 0px 20px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+form input:valid {
+  background-color: rgba(29, 255, 22, 0.2);
+}
+
+form input:invalid {
+  background-color: rgba(255, 0, 0, 0.2)
+}
+
+form select {
+  padding: 5px;
+  margin: 0px 0px 20px;
+}
+
+#editHeader {
+  column-width: 50px;
+  text-align: bottom;
+}
+
+input[text] output {}
+
+meter {}
+
+progress {}
+
+select {}
+
+optgroup {}
+
+option {}
+
+textarea {}
+
+/* ----- Media ----- */
+figure {}
+
+figcaption {}
+
+img {}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (max-width: 1000px) {
+  nav a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+  td,
+  tr,
+  th {
+    padding: 0px;
+  }
+
+  fieldset {
+    text-align: center;
+    margin: auto;
+  }
+
+
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
