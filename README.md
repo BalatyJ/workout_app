@@ -1,3 +1,7 @@
 ### MERN Portfolio Project
 
-Workout exercise app created in CS 290 at OSU. Features queries and responses to a MongoDB relational database that features CRUD functionality. Also features extensive UI design using CSS, and use of REACT functionality to have components and pages interact with each other in a single page application.
+* Portfolio web development project featuring a MERN exercise application. Users can keep records of the exercises they’ve done over time.
+
+* Built using MongoDB, HTML, CSS, React, Express, and Node.js.
+
+* Utilized CRUD operations with a MongoDB server for users to keep track of the exercises they’ve done over time and an Express server to handle requests from the UI.
